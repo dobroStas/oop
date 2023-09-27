@@ -8,16 +8,16 @@ public class vendingAvtomat_copy {
     // initProducts (List <Product>) сохраняющий в себе список исходных продуктов и getProduct(String name)
 
 
-    List <product_copy> listProducts = new ArrayList<>();
+    List <product_copy> listProducts_copu = new ArrayList<>();
 
     public void initProducts(List <product_copy> myList){
-        listProducts = myList;
+        listProducts_copu = myList;
 
     }
 
 
     public product_copy getProducts(String name){
-        for (product_copy elProduct : listProducts) {
+        for (product_copy elProduct : listProducts_copu) {
             if (elProduct.getName().equals(name)){          //equals сравнение не ссылочное
                 return elProduct;
             }

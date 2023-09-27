@@ -23,26 +23,7 @@ public abstract class product {
 
     }
 
-    public abstract class product_copy {
-    private String name;
-    private int price;
-    private int quantity;
-    // private int [] storage;
-    private Calendar bestBefore;
-    private double volume;
-    private double weight;
-
-
-    public product_copy(String name, int price, int quantity, Calendar bestBefore, double volume){           //конструктор. имя такое же как у класса
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.bestBefore = bestBefore;
-        this.volume = volume;
-        // this.weight = weight;
-
-
-    }
+    
 
     
     
@@ -96,29 +77,21 @@ public abstract class product {
         this.weight = weight;
     }
 
-    // @Override
-    // public String toString() {
-    //         return "product [name=" + name + ", price=" + price + ", quantity=" + quantity + ", bestBefore=" + bestBefore.get(Calendar.YEAR) + "."
-    //                 + bestBefore.get(Calendar.MONTH) + "." + bestBefore.get(Calendar.DATE) + ", volume=" + volume + "]";
-    //     }
     @Override
     public String toString() {
-        return "product [name=" + name + ", price=" + price + ", quantity=" + quantity + ", bestBefore=" + bestBefore.get(Calendar.YEAR) + "."
-                + bestBefore.get(Calendar.MONTH) + "." + bestBefore.get(Calendar.DATE) + ", weight=" + weight + "]";
-    }
+            return "product [name=" + name + ", price=" + price + ", quantity=" + quantity + ", bestBefore=" + bestBefore.get(Calendar.YEAR) + "."
+                    + bestBefore.get(Calendar.MONTH) + "." + bestBefore.get(Calendar.DATE) + ", volume=" + volume + "]";
+        }
+    // @Override
+    // public String toString() {
+    //     return "product [name=" + name + ", price=" + price + ", quantity=" + quantity + ", bestBefore=" + bestBefore.get(Calendar.YEAR) + "."
+    //             + bestBefore.get(Calendar.MONTH) + "." + bestBefore.get(Calendar.DATE) + ", weight=" + weight + "]";
+    // }
 
     
 
 
 
 
-
     
-
-
-
-
-
-
-    }
 }
