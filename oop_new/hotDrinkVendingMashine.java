@@ -26,6 +26,15 @@ public class hotDrinkVendingMashine implements interfaceVendingMashine{
         return null;
     }
 
+    public hotDrink getProduct (String name, int temperature) {
+        for (hotDrink hotDrink : productsList) {
+            if (hotDrink.getName().equals(name) && hotDrink.getTemperature() == temperature) {
+                return hotDrink;
+            }
+        }
+        return null;
+    }
+
     @Override
     public Product getProduct(String name) {
         for (Product product : productsList) {
